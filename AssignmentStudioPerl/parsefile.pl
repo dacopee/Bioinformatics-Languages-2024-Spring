@@ -7,33 +7,42 @@
 # please annotate the functioning code below
 #...replacing the questions below with what you think the code right below it does
 
-# what does this line do?.....makes new directory for output files
+# what does this line do?
+# makes new directory for output files to store them 
 mkdir "ProcessedYeastAlns"; #or die "\nProcessedYeastAlns folder already exists. Delete it and try again.\n";
 $filecount = 0;
 $file_iteration = 0;
 
-# what do these four variables represent? How are they used later in the code? ...scer = 
+# what do these four variables represent? How are they used later in the code?  
+# these four variables are possible headings in the gene files that need to be ignored as they are not valid nucleotides
 $sp1_heading = "Scer";
 $sp2_heading = "Spar";
 $sp3_heading = "Smik";
 $sp4_heading = "Sbay";
 
 # what does this part do?
+# Opens a directory called YeastAlignments or kills the code if the directory cannot be found or opened
+#$dir is a variable named for the folder
 $dir = "YeastAlignments";
 opendir(DIR,$dir)or die "can't open directory $dir:$!";
 print"\n";
 print "Alignment files in $dir are:\n";
 
 # what generally happens as result of the following while loop?
-while ($filename = readdir DIR){ # loop through alignment files
+# allignment files (yeast genes) are looked over and opened until the program goes through every file in the dir 
+while ($filename = readdir DIR){ 
 
 $filecount = $filecount + 1;
 
 # what does the following substring return? Is it used later in the code...where?
+# the name of the open reading frame
+# they are used later to name the outputs to their respective DNA 
 $ORFname = substr($filename, 1, 7);
 print "ORFname = "."$ORFname\n";
 
 # what does the following substring return?  what does it tell you about the gene?
+# this returns a substring of the file name starting at position 7 (8th char as perl is zero-indexed) and goes one char further
+# 
 $WatsonCrick = substr ($filename, 7, 1);
 #print "$WatsonCrick\n";
 
