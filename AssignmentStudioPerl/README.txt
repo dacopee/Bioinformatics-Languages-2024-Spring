@@ -19,3 +19,8 @@ the string for the whole line in the RNA-seq results file)
 
 5. Now add the creation of an ‘output’ file and folder where the information from #4 and
 #5 is printed and saved for each ORF/gene
+
+THE FOLLOWING FILES ARE: 
+1. parsefile.pl - Own commenting to properly annotate
+2. 
+3. danParsefile.pl - procedural style of coding to make a new script 
