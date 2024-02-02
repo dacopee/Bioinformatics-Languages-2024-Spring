@@ -42,11 +42,12 @@ print "ORFname = "."$ORFname\n";
 
 # what does the following substring return?  what does it tell you about the gene?
 # this returns a substring of the file name starting at position 7 (8th char as perl is zero-indexed) and goes one char further
-# 
+# the 4 yeast species? I cannot see the file name
 $WatsonCrick = substr ($filename, 7, 1);
 #print "$WatsonCrick\n";
 
 # what do the next five lines of code do?
+# Opens a file in the yeast alignments folder if the name is 7 char long, or goes to next and then opens the folder and creates a new file for output data
 $filelocation = "./YeastAlignments/"."$filename";
 if (length $ORFname == 7){
 open (INFILE, $filelocation) or die "Cannot open file";
@@ -63,16 +64,21 @@ open (OUTFILE, ">"."./ProcessedYeastAlns/"."$filename") || die " could not open 
   
 # this is another while loop nested in the previous while loop
 #  what does it basically do?
+# This splits up the DNA strands at white spaces and matches the sequences to concatonate into genes of other yesat species 
   while(<INFILE>){
     chomp;
     # we talked about this split array function in class today
     # here it is associated with regular expressions..we will cover them later in course
     # look in our Perl pocket guide to find out what 's+' and 'm' and 'tr' do
+        # s+ - this splits our string at a white space char
+        # m - matches a char in your string 
+        # tr - this replaces an entire string
     @a = split(/\s+/, $_);
     #print "$_\n";
     # the if statements below are used to grab lines of sequence matching each
     # of the 4 yeast species and concatenate them together into a single sequence
     # What is the Perl symbol that indicates concatenation?
+      # '.'
     if($_ =~ m/^$sp1_heading/){
       $flat1 = $flat1.$a[1];
       }
@@ -89,6 +95,7 @@ open (OUTFILE, ">"."./ProcessedYeastAlns/"."$filename") || die " could not open 
   
   # the large block of code below reverse complements genes if needed?
   # How are these genes files recognized by the code?
+    # the gene files are reccognized by thier formatting
   # What does the command 'reverse' do to a string variable?
   # what does the 'tr' n the regular expression do?...look it up if needed
   
