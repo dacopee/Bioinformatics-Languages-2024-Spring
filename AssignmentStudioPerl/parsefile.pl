@@ -42,7 +42,7 @@ print "ORFname = "."$ORFname\n";
 
 # what does the following substring return?  what does it tell you about the gene?
 # this returns a substring of the file name starting at position 7 (8th char as perl is zero-indexed) and goes one char further
-# the 4 yeast species? I cannot see the file name
+# the 4 yeast species
 $WatsonCrick = substr ($filename, 7, 1);
 #print "$WatsonCrick\n";
 
