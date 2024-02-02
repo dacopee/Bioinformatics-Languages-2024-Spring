@@ -1,3 +1,5 @@
+FOR THE LIST OF MY DOCUMENTS PLEASE SKIP TO LINE 25!
+
 This weeks assignment is to:
 1. Use your own commenting to properly annotate the parsefile.pl script and remove Dr. Babbit's comments/questions
 
