@@ -22,7 +22,7 @@ $sp4_heading = "Sbay";
 
 # what does this part do?
 # Opens a directory called YeastAlignments or kills the code if the directory cannot be found or opened
-#$dir is a variable named for the folder
+# $dir is a variable named for the folder
 $dir = "YeastAlignments";
 opendir(DIR,$dir)or die "can't open directory $dir:$!";
 print"\n";
@@ -63,7 +63,7 @@ open (OUTFILE, ">"."./ProcessedYeastAlns/"."$filename") || die " could not open 
   $flat4 = "";
   
 # this is another while loop nested in the previous while loop
-#  what does it basically do?
+# what does it basically do?
 # This splits up the DNA strands at white spaces and matches the sequences to concatonate into genes of other yesat species 
   while(<INFILE>){
     chomp;
@@ -93,11 +93,13 @@ open (OUTFILE, ">"."./ProcessedYeastAlns/"."$filename") || die " could not open 
       }
   }
   
-  # the large block of code below reverse complements genes if needed?
+  # the large block of code below reverse complements genes if needed? - Yes?
   # How are these genes files recognized by the code?
     # the gene files are reccognized by thier formatting
   # What does the command 'reverse' do to a string variable?
+    # this reverses a string
   # what does the 'tr' n the regular expression do?...look it up if needed
+    #relplaces characters in a string by their respective told position
   
   # sequence 1
   if ($WatsonCrick eq "C"){my $revcom = reverse $flat1; $revcom =~ tr/ACGTacgt/TGCAtgca/; $sequenceA = $revcom;}
@@ -117,6 +119,7 @@ open (OUTFILE, ">"."./ProcessedYeastAlns/"."$filename") || die " could not open 
   print OUTFILE "$sp4_heading\t"."$sequenceD\n";
   
   # what does the remainder of the code do?
+    # this code gets the length of the strings after they have been "worked through" by the code and stores it in their variable, this is able to be printed later
   $sequencelengthA = length $sequenceA;
   $sequencelengthB = length $sequenceB;
   $sequencelengthC = length $sequenceC;
