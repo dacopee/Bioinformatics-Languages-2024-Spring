@@ -24,5 +24,5 @@ the string for the whole line in the RNA-seq results file)
 
 THE FOLLOWING FILES ARE: 
 1. parsefile.pl - Own commenting to properly annotate
-2. 
+2. geneparse.pl - reduced printing to screen. This does run faster, but I kept one line to make sure the program was working through every file. 
 3. danParsefile.pl - procedural style of coding to make a new script 
