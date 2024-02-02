@@ -29,10 +29,6 @@ my $DNA = <INFILE>;
     else {
     print "N/A\n";
 }
-    
-
-}
-       
-                  
+}                  
 }  # end while loop
 print "\n\nEnd Program\n";  
