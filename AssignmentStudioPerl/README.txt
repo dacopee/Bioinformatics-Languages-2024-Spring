@@ -26,3 +26,5 @@ THE FOLLOWING FILES ARE:
 1. parsefile.pl - Own commenting to properly annotate
 2. geneparse.pl - reduced printing to screen. This does run faster, but I kept one line to make sure the program was working through every file. 
 3. danParsefile.pl - procedural style of coding to make a new script 
+4. danParsefilePT4.pl - New script with DNA -> Protein sequence with 1-letter AAs.
+5. 
