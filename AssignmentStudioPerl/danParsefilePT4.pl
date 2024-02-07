@@ -54,7 +54,7 @@ my $protein_sequence= '';
         my $codon = substr($DNA, $i, 3); # Extract three characters
         if (exists $genetic_code{$codon}) {
             my $amino_acid = $genetic_code{$codon};
-            #print "$amino_acid";
+            print "$amino_acid";
             $protein_sequence .= $amino_acid;
         } else {
             print "Error: Incorrect codon: $codon\n";
