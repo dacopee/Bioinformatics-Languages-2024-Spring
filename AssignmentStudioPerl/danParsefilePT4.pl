@@ -18,7 +18,8 @@
     'GCT' => 'A', 'GCC' => 'A', 'GCA' => 'A', 'GCG' => 'A',
     'GAT' => 'D', 'GAC' => 'D', 'GAA' => 'E', 'GAG' => 'E',
     'GGT' => 'G', 'GGC' => 'G', 'GGA' => 'G', 'GGG' => 'G',
-);
+); #this is a hash map mapping codons from the leading strand to 1-letter codes for AAs
+
 
 $dir = "YeastGenesA"; 
 opendir(DIR,$dir) or die "can't open directory $dir:$!"; #open the dir with yeast genes
