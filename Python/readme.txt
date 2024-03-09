@@ -2,6 +2,10 @@ Hi, this is my work for Python
 
 the files:
 myGeneParser.py - a gene parser that checks for nucleotides that the user has input into the code.
+DCPythonDATA.py - this is the data from kaggle.com and it shows the data from student spending habits in a bar chart and scatter plot. 
+  The first chart explores student spending habits broken down by major and averaged
+  The second chart explores the amount a student receives in financial aid compared to the amount they make in a month.
+If I had more time to work on this project, I would explore trendline data, but this assignment was beneficial to see how to plot charts using python instead of another program such as Excel
 
 For Part A
 1. Check out myGeneParser.py to get you started. It will handle the I/O for you.
