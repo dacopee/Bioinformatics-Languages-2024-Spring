@@ -1,8 +1,9 @@
 Hi, This is the R assignment.
 
 The files:
-RCodeDanCoplan.R - R file with ANOVA
-rCodePython.py - python script anaylizing the data
+RCodeDanCoplan.R - R file with ANOVA and with graph
+RassignPython.py - python script analyzing the data 
+rCodePython.py - defunct script that is orders data incorrectly
 
 1. Install R, Rstudio, and the ggplot2 package to your laptop. Write an R script that
 tests for significant differences across all yeast chromosomes regarding GC content,
@@ -16,5 +17,3 @@ the 16 chromosomes.
 6. Make a scatterplot (points representing genes) with two of your metrics of interest
 on each axis. Compute a linear regression and plot the regression line on your
 scatterplot.
-
-As a note, this would take less time in excel...
