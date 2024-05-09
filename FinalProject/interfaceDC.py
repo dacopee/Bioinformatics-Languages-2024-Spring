@@ -179,7 +179,7 @@ def thirdCodon(foldername): #Find ratio of AUGC as third amino acid in seq
         print(f"\nNucleotide Percentage for Chromosome {chrom}:\n A = {A_pct}%, T = {T_pct}%, G = {G_pct}%, C = {C_pct}%.")
 
     else:
-        file_path = os.path.join(foldername, file)
+        file_path = os.path.join(foldername, target_files)
         with open(file_path, 'r') as file: #reads file
             fastacheck = file.read(1)
             if fastacheck == '>':
