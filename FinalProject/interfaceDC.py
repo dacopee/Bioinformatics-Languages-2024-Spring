@@ -16,7 +16,7 @@ def helpCMD(): #DOnt forget to add when making new commands
     print('\thello: Says hi!\n')
     print('\thelp: A general description of this program\n')
     print('\tparrot: Try it out!\n')
-    print('\tthird codon: Finds and reports the percentage of each nucleotide the third codon\n')
+    print('\tthird codon: Finds and reports the nucleotide percentag in the third position in each codon\n')
     print('\ttranslator: Translates your genes into an Amino Acid Sequence\n')
 
 def main():
